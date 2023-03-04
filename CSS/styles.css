@@ -6,6 +6,7 @@
     --bg-main: #2F303A;
     --bg-section: #F5F4FA;
     --bg-card: #FFFFFF;
+    --icon: #AFB1BB;
 }
 
 
@@ -68,8 +69,21 @@ button {
 
 .info:hover,
 .info:focus {
+
     color: var(--secondary-color);
 }
+
+
+.icon-email {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.icon-email:hover {
+    fill: var(--secondary-color);
+}
+
+
 
 .phone {
     color: var(--detail-color);
@@ -83,9 +97,20 @@ button {
     color: var(--secondary-color);
 }
 
+.icon-icon-phone {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.icon-icon-phone:hover {
+    fill: var(--secondary-color);
+}
+
 /*main*/
 .bg-main {
-    background-color: var(--bg-main);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .text-white {
@@ -160,11 +185,16 @@ button {
 .detail-team-card {
     color: var(--detail-color);
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.2;
 }
 
 
 /*footer*/
+.bg-main-footer {
+    background-color: var(--bg-main);
+}
+
 .addres {
     color: var(--text-white);
     font-style: normal;
@@ -248,7 +278,7 @@ button {
 }
 
 .section {
-    padding-top: 94px;
+    padding-top: 89px;
     padding-bottom: 94px;
 }
 
@@ -285,14 +315,14 @@ button {
 .links-contact {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    padding-left: 340px;
+    align-items: center;
+    padding-left: 306px;
     margin: 0;
-    justify-content: space-between;
+
 }
 
-.p-50 {
-    padding-left: 50px;
+.padding-30 {
+    padding-left: 30px;
 }
 
 .p-30 {
@@ -313,6 +343,18 @@ button {
     margin-bottom: 0;
 }
 
+
+
+.about-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-section);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+}
+
 .about-section {
 
     display: flex;
@@ -321,8 +363,12 @@ button {
     margin: 0;
 }
 
-.about-section>li>h3 {
+/*.about-section>li>h3 {
     margin-top: 0;
+}*/
+
+.about-section>h3 {
+    margin-top: 30px;
 }
 
 .services {
@@ -346,6 +392,29 @@ button {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb>.label {
+    position: absolute;
+    top: 224px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    color: var(--text-white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding-top: 27px;
 }
 
 .our-team {
@@ -374,18 +443,55 @@ button {
     background-color: var(--bg-card);
 }
 
-.our-team>.our-team-cards>li>h3 {
-    display: flex;
-    justify-content: center;
+.card-body>h3 {
+
     padding: 30px 0 10px 0;
     margin: 0;
 }
 
-.our-team>.our-team-cards>li>p {
+.card-body>p {
     display: flex;
     justify-content: center;
-    padding: 10px 0 30px 0;
+    padding: 0 0 16px 0;
     margin: 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.icon-social-team {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-social-team>.icon-social>svg {
+    fill: var(--icon);
+
+}
+
+.icon-social-team>.icon-social:hover,
+.icon-social-team>.icon-social:focus {
+    background-color: var(--secondary-color);
+
+}
+
+.icon-social-team>a>svg:hover {
+    fill: var(--text-white);
+}
+
+.icon-social {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--text-white);
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 /*flex footer*/
