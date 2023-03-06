@@ -57,12 +57,18 @@
             <ul class="link links-contact">
               <li>
                 <a href="mailto:info@devstudio.com" class="info link"
-                  >info@devstudio.com</a
+                  ><svg class="icon-email" width="16" height="12">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
               </li>
-              <li>
-                <a href="tel:+525555296000" class="phone link p-50"
-                  >+52 55 5529 6000</a
+              <li class="padding-30">
+                <a href="tel:+525555296000" class="phone link"
+                  ><svg class="icon-icon-phone" width="10" height="16">
+                    <use href="./images/icons.svg#icon-icon-phone"></use>
+                  </svg>
+                  +52 55 5529 6000</a
                 >
               </li>
             </ul>
@@ -201,31 +207,59 @@
         </ul>
       </div>
     </main>
-    <footer class="bg-main">
-      <a class="nav-link link" href="./index.html"> WebStudio</a>
-      <address>
-        <ul class="link">
-          <li>
-            <a
-              class="addres link"
-              href="#"
-              target="_blank"
-              rel="noopner noreferrer"
-              >Calz.Ticoman 500, Ciudad de mexico, CDMX, Mexico</a
-            >
-          </li>
-          <li>
-            <a class="info-footer link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="phone-footer link" href="+525555296000"
-              >+52 55 5529 6000</a
-            >
-          </li>
-        </ul>
-      </address>
-    </footer>
+    <div class="bg-main-footer social-footer">
+      <footer class="container">
+        <a class="nav-link link" href="./index.html"> WebStudio</a>
+        <address>
+          <ul class="link info-links-footer">
+            <li>
+              <a
+                class="addres link"
+                href="#"
+                target="_blank"
+                rel="noopner noreferrer"
+                >Calz.Ticoman 500, Ciudad de mexico, CDMX, Mexico</a
+              >
+            </li>
+            <li>
+              <a class="info-footer link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="phone-footer link" href="+525555296000"
+                >+52 55 5529 6000</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="icons-social-footer">
+          <h3>ENCUENTRENOS EN</h3>
+          <div class="icons-socials">
+            <a class="icon-social-footer">
+              <svg class="" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a class="icon-social-footer">
+              <svg class="" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a class="icon-social-footer">
+              <svg class="" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a class="icon-social-footer">
+              <svg class="" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

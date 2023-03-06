@@ -193,6 +193,8 @@ button {
 /*footer*/
 .bg-main-footer {
     background-color: var(--bg-main);
+    height: 252px;
+    padding: 60px 0 60px 0;
 }
 
 .addres {
@@ -201,6 +203,12 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+}
+
+.info-links-footer {
+    margin: 6 0 0 0;
+    padding: 0;
+    width: 231px;
 }
 
 .info-footer {
@@ -237,13 +245,23 @@ button {
 }
 
 .button-filter {
+    width: 145px;
+    height: 38px;
     background-color: var(--bg-section);
     color: var(--primary-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     cursor: pointer;
+    border-radius: 4px;
+    border: none;
 }
+
+.button-filter:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
 
 .button-filter:hover,
 .button-filter:focus {
@@ -344,7 +362,6 @@ button {
 }
 
 
-
 .about-icon {
     display: flex;
     justify-content: center;
@@ -441,6 +458,8 @@ button {
 
 .our-team>.our-team-cards>li {
     background-color: var(--bg-card);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .card-body>h3 {
@@ -480,9 +499,10 @@ button {
 
 }
 
-.icon-social-team>a>svg:hover {
+.icon-social:hover svg {
     fill: var(--text-white);
 }
+
 
 .icon-social {
     display: grid;
@@ -494,15 +514,109 @@ button {
     cursor: pointer;
 }
 
+/*flex regular customers*/
+.section-customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 59px 0 151px 0;
+}
+
+.section-customers>.icons-customers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.icon-customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9px;
+}
+
+.icon-customers {
+    border: 1px solid var(--icon);
+    border-radius: 4px;
+    width: 170px;
+    height: 81px;
+    cursor: pointer;
+
+}
+
+.icon-customers:hover {
+    border: 1px solid var(--secondary-color);
+}
+
+.section-customers>.icons-customers>li>a>svg {
+    fill: var(--icon);
+}
+
+.section-customers>.icons-customers>li>a:hover svg {
+    fill: var(--secondary-color);
+}
+
 /*flex footer*/
 
+.footer-section {
+    display: flex;
+}
+
+.icons-social-footer {
+    width: 206px;
+}
+
+.social-footer {
+    position: relative;
+}
+
+.icons-social-footer {
+    position: absolute;
+    left: 516px;
+    bottom: 100px;
+    top: 72px;
+}
+
+.icons-social-footer>h3 {
+    margin: 0 0 20px 0;
+    color: var(--text-white);
+}
+
+.icons-socials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-socials>.icon-social-footer>svg {
+    fill: var(--text-white);
+
+}
+
+.icon-social-footer {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.icons-socials>.icon-social-footer:hover,
+.icon-social-team>.icon-social:focus {
+    background-color: var(--secondary-color);
+
+}
 
 /*flex portfolio*/
 
 .buttons-filters {
     display: flex;
     justify-content: center;
-    padding: 106px 0px 34px 0px;
+    padding: 106px 0px 50px 0px;
     margin: 0;
 }
 
@@ -527,6 +641,12 @@ button {
     background-color: var(--bg-card);
     border: 1px solid #EEEEEE;
     margin-bottom: 30px;
+}
+
+.portfolio-section>li:hover,
+.portfolio-section>li:focus {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-section>li:nth-child(n+7) {
